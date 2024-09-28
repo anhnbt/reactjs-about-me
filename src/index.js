@@ -1,10 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
 import AboutMe from "./AboutMe";
-import { Previous } from "./components/Previous";
+import { One } from "./components/lesson-01-basic-ux-ui/One";
+import { Two } from "./components/lesson-01-basic-ux-ui/Two";
+import { Three } from "./components/lesson-01-basic-ux-ui/Three";
+import { Four } from "./components/lesson-01-basic-ux-ui/Four";
+import { Five } from "./components/lesson-01-basic-ux-ui/Five";
+import { Six } from "./components/lesson-01-basic-ux-ui/Six";
+import { Seven } from "./components/lesson-01-basic-ux-ui/Seven";
+import { Eight } from "./components/lesson-01-basic-ux-ui/Eight";
+import { Nine } from "./components/lesson-01-basic-ux-ui/Nine";
+import { Ten } from "./components/lesson-01-basic-ux-ui/Ten";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +21,44 @@ const router = createBrowserRouter([
     element: <AboutMe />,
   },
   {
-    path: "/previous",
-    element: <Previous />,
+    path: "/lesson-01-basic-ux-ui/one",
+    element: <One />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/two",
+    element: <Two />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/three",
+    element: <Three />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/four",
+    element: <Four />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/five",
+    element: <Five />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/six",
+    element: <Six />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/seven",
+    element: <Seven />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/eight",
+    element: <Eight />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/nine",
+    element: <Nine />,
+  },
+  {
+    path: "/lesson-01-basic-ux-ui/ten",
+    element: <Ten />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

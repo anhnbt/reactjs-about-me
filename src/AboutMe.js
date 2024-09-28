@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -16,7 +15,7 @@ const AboutMe = () => {
   return (
     <div className="app">
       <div class="greeting">Chào hỏi và làm quen</div>
-      <div class="container">
+      <div class="about-container">
         <div class="info">
           <h1>Nguyễn Bá Tuấn Anh</h1>
           <p>
@@ -28,7 +27,8 @@ const AboutMe = () => {
             0349876595
           </p>
           <p>
-            <FontAwesomeIcon className="icon" icon={faChalkboardTeacher} /> Instructor, Tutor
+            <FontAwesomeIcon className="icon" icon={faChalkboardTeacher} />{" "}
+            Instructor, Tutor
           </p>
           <div class="skills">
             <h3>Môn giảng dạy:</h3>
@@ -38,7 +38,7 @@ const AboutMe = () => {
         <div class="image"></div>
       </div>
 
-      <NavButtons />
+      <NavButtons prev={null} next={"/lesson-01-basic-ux-ui/one"} />
     </div>
   );
 };

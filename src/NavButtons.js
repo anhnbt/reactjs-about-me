@@ -8,29 +8,22 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Outlet, Link } from "react-router-dom";
 
-const NavButtons = () => {
+const NavButtons = ({ prev, next, isLight = false }) => {
   let navigate = useNavigate();
-
-  const handleNavigation = (e, targetUrl) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-
-    setTimeout(() => {
-      navigate(targetUrl);
-    }, 500);
-  };
 
   return (
     <>
-      <div class="nav-container">
-        <div class="nav-buttons">
-          <Link to="/previous">
-            <FontAwesomeIcon
-              size="1x"
-              icon={faArrowLeft}
-              className="nav-button prev"
-            />
-          </Link>
+      <div className={isLight ? 'light nav-container' : 'nav-container'}>
+        <div className="nav-buttons">
+          {prev && (
+            <Link to={prev}>
+              <FontAwesomeIcon
+                size="1x"
+                icon={faArrowLeft}
+                className="nav-button prev"
+              />
+            </Link>
+          )}
           <Link to="/">
             <FontAwesomeIcon
               size="1x"
@@ -38,13 +31,15 @@ const NavButtons = () => {
               className="nav-button home"
             />
           </Link>
-          <Link to="/">
+          {next && (
+          <Link to={next}>
             <FontAwesomeIcon
               size="1x"
               icon={faArrowRight}
               className="nav-button next"
             />
           </Link>
+          )}
         </div>
       </div>
     </>
