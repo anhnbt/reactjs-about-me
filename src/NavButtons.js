@@ -1,15 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowLeft,
-  faHome,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
-import { Outlet, Link } from "react-router-dom";
+import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft, faArrowRight, faHome,} from "@fortawesome/free-solid-svg-icons";
 
 const NavButtons = ({ prev, next, isLight = false }) => {
-  let navigate = useNavigate();
 
   return (
     <>
