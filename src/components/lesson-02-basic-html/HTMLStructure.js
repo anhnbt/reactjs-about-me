@@ -8,7 +8,7 @@ const HTMLStructure = () => {
         <div className="bg-white py-10 px-4">
             <div className="max-w-4xl mx-auto">
                 <Card hoverable className="shadow-lg">
-                    <Title level={3} className="text-center" style={{color: "#272882"}}>Cấu trúc trang HTML</Title>
+                    <Title level={3} className="text-center">Cấu trúc trang HTML</Title>
                     <Paragraph>
                         Một trang HTML thường có cấu trúc cơ bản như sau:
                     </Paragraph>
@@ -37,7 +37,7 @@ const HTMLStructure = () => {
                         Các phần chính trong cấu trúc trang HTML bao gồm:
                     </Paragraph>
                     <ul className="list-disc ml-6">
-                        <li><strong>Doctype:</strong> Khai báo kiểu tài liệu để trình duyệt hiểu rằng đây là một trang HTML.</li>
+                        <li><strong>DOCTYPE:</strong> Khai báo kiểu tài liệu để trình duyệt hiểu rằng đây là một trang HTML.</li>
                         <li><strong>Thẻ &lt;html&gt;:</strong> Là thẻ gốc chứa tất cả nội dung của trang.</li>
                         <li><strong>Thẻ &lt;head&gt;:</strong> Chứa thông tin meta, tiêu đề trang và liên kết đến tài nguyên khác.</li>
                         <li><strong>Thẻ &lt;body&gt;:</strong> Chứa tất cả nội dung mà người dùng sẽ thấy, như tiêu đề, đoạn văn, hình ảnh, v.v.</li>

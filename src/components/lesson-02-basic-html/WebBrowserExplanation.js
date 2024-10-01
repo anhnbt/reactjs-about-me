@@ -5,13 +5,15 @@ const { Title, Paragraph } = Typography;
 
 const WebBrowserExplanation = () => {
     return (
-        <div className="bg-white py-10 px-4">
+        <div className="bg-gray-100 py-10">
             <div className="max-w-4xl mx-auto">
                 <Card hoverable className="shadow-lg">
-                    <Title level={3} className="text-center" style={{color: "#272882"}}>Trình duyệt web là gì?</Title>
+                    <Title level={3} className="text-center">Trình duyệt web là gì?</Title>
                     <Paragraph>
-                        Trình duyệt web là một phần mềm cho phép người dùng truy cập và tương tác với nội dung trên Internet.
-                        Nó thực hiện việc gửi yêu cầu đến máy chủ để lấy tài liệu HTML và sau đó hiển thị nội dung đó cho người dùng.
+                        Trình duyệt web là một phần mềm cho phép người dùng truy cập và tương tác với nội dung trên
+                        Internet.
+                        Nó thực hiện việc gửi yêu cầu đến máy chủ để lấy tài liệu HTML và sau đó hiển thị nội dung đó
+                        cho người dùng.
                     </Paragraph>
                     <Paragraph>
                         Các trình duyệt phổ biến hiện nay bao gồm:

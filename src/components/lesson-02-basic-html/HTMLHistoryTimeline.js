@@ -20,7 +20,7 @@ const HTMLHistoryTimeline = () => {
 
     return (
         <div className="bg-gray-100 py-10">
-            <Title level={2} className="text-center" style={{color: "#272882"}} data-aos="fade-up">Lịch sử phát triển của HTML</Title>
+            <Title level={2} className="text-center" data-aos="fade-up">Lịch sử phát triển của HTML</Title>
             <div className="flex justify-center">
                 <div className="w-full max-w-4xl px-4">
                     <Timeline

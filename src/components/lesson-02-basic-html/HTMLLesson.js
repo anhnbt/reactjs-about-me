@@ -4,6 +4,10 @@ import HTMLHistoryTimeline from './HTMLHistoryTimeline';
 import SimpleHTMLExample from "./SimpleHTMLExample";
 import WebBrowserExplanation from "./WebBrowserExplanation";
 import HTMLStructure from "./HTMLStructure";
+import HTMLElements from "./HTMLElements";
+import HtmlAttributes from "./HTMLAttributes";
+import HtmlStylesSimple from "./HtmlStylesSimple";
+import HtmlEntities from "./HtmlEntities";
 
 const HTMLLesson = () => {
 
@@ -14,7 +18,8 @@ const HTMLLesson = () => {
     return (
         <div className="bg-gray-100 py-10">
             <header className="text-center mb-8">
-                <h1 className="text-4xl font-bold" style={{color: "#272882"}}>Bài học: Cấu trúc và các thẻ HTML cơ bản</h1>
+                <h1 className="text-4xl font-bold">Bài học: Cấu trúc và các thẻ HTML cơ
+                    bản</h1>
                 <p className="text-lg text-gray-700">[Web Frontend] Building Website with HTML and CSS</p>
             </header>
             <section className="mb-12">
@@ -34,7 +39,23 @@ const HTMLLesson = () => {
             </section>
 
             <section className="mb-12">
-                <HTMLStructure />
+                <HTMLStructure/>
+            </section>
+
+            <section className="mb-12">
+                <HTMLElements/>
+            </section>
+
+            <section className="mb-12">
+                <HtmlAttributes/>
+            </section>
+
+            <section className="mb-12">
+                <HtmlStylesSimple/>
+            </section>
+
+            <section className="mb-12">
+                <HtmlEntities/>
             </section>
 
             <footer className="text-center mt-16">
