@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import {Card, Timeline, Typography} from 'antd';
-import timBernersLee from '../../Tim Berners-Lee.jpg';
-import html2 from '../../html2.png';
-import html4 from '../../html4.png';
-import movBbbMp4 from '../../mov_bbb.mp4';
+import timBernersLee from './Tim Berners-Lee.jpg';
+import html2 from './html2.png';
+import html4 from './html4.png';
+import movBbbMp4 from './mov_bbb.mp4';
 import AOS from 'aos';
 
 const { Title} = Typography;

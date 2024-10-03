@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Card, Typography} from 'antd';
 import AOS from 'aos';
-import HTML5Logo from '../../HTML5_logo_and_wordmark.svg'
+import HTML5Logo from './HTML5_logo_and_wordmark.svg'
 
 const {Title, Paragraph} = Typography;
 

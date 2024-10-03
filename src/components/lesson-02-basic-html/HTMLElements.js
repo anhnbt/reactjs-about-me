@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, List, Typography} from 'antd';
-import HTML5Elements from "../../htmlElements.svg";
+import HTML5Elements from "./htmlElements.svg";
 
 const {Title, Paragraph} = Typography;
 

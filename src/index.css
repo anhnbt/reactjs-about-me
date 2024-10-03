@@ -156,7 +156,7 @@ body {
 }
 
 .left.six {
-    background-image: url("lotus.jpg");
+    background-image: url("components/lesson-01-basic-ux-ui/lotus.jpg");
     background-size: cover;
     color: #ffffff;
 }

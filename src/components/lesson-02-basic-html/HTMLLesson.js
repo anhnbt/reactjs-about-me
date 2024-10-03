@@ -54,6 +54,9 @@ const HTMLLesson = () => {
                 <HtmlStylesSimple/>
             </section>
 
+            // TODO: HTML Text Formatting
+            // TODO: HTML Comments
+
             <section className="mb-12">
                 <HtmlEntities/>
             </section>
