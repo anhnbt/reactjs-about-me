@@ -32,7 +32,7 @@ const AboutMe = () => {
           </p>
           <div class="skills">
             <h3>Môn giảng dạy:</h3>
-            <p>HTML, CSS, JavaScript, ReactJS, SQL, Java</p>
+            <p>HTML, CSS, JavaScript, ReactJS, SQL, Java, Spring Boot</p>
           </div>
         </div>
         <div class="image"></div>
