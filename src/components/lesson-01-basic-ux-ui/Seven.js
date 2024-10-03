@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import NavButtons from "../../NavButtons";
+import NavButtons from "../NavButtons";
 
 export const Seven = () => {
   useEffect(() => {

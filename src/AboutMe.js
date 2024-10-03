@@ -5,7 +5,7 @@ import {
   faPhone,
   faChalkboardTeacher,
 } from "@fortawesome/free-solid-svg-icons";
-import NavButtons from "./NavButtons";
+import NavButtons from "./components/NavButtons";
 
 const AboutMe = () => {
   useEffect(() => {
