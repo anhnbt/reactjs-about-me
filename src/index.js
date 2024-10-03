@@ -16,6 +16,7 @@ import {Eight} from "./components/lesson-01-basic-ux-ui/Eight";
 import {Nine} from "./components/lesson-01-basic-ux-ui/Nine";
 import {Ten} from "./components/lesson-01-basic-ux-ui/Ten";
 import HTMLLesson from "./components/lesson-02-basic-html/HTMLLesson";
+import HTMLForms from "./components/lesson-03-html-forms-and-tables/HTMLForms";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
   {
     path: "/lesson-02-basic-html",
     element: <HTMLLesson />,
+  },
+  {
+    path: "/lesson-03-html-forms-and-tables",
+    element: <HTMLForms />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
