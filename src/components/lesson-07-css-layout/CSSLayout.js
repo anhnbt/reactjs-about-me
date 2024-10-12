@@ -6,7 +6,7 @@ import tclt from "./tclt.png";
 import Lightbox from "react-awesome-lightbox";
 // You need to import the CSS only once
 import "react-awesome-lightbox/build/style.css";
-const { Title, Paragraph } = Typography;
+const { Title} = Typography;
 
 const CSSLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const CSSLayout = () => {
       duration: 1000,
       once: true,
     });
-    document.title = "HTML Form & Table";
+    document.title = "Bài 7: CSS Layout";
   }, []);
 
   return (
