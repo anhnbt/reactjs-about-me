@@ -27,6 +27,7 @@ import InputTypeButton from "./InputTypeButton";
 import InputTypeOther from "./InputTypeOther";
 import SelectOption from "./SelectOption";
 import Textarea from "./Textarea";
+import HtmlTable from "./HtmlTable";
 
 const {Title, Paragraph} = Typography;
 
@@ -160,8 +161,8 @@ const HTMLForms = () => {
                 </div>
             </section>
             <section className="mb-12">
-                <div className="bg-white py-10 px-4">
-                    <div className="container mx-auto" data-aos="fade-up">
+                <div className="py-10 px-4">
+                    <div className="max-w-4xl mx-auto" data-aos="fade-up">
                         <Card hoverable className="shadow-lg">
                             <Title level={2} className="text-left">
                                 Phương thức POST và GET
@@ -240,7 +241,7 @@ const HTMLForms = () => {
                 </div>
             </section>
             <section className="mb-12">
-                <div className="bg-white py-10 px-4">
+                <div className="py-10 px-4">
                     <div className="max-w-4xl mx-auto" data-aos="fade-up">
                         <Card hoverable className="shadow-lg">
                             <Title level={2} className="text-left">
@@ -306,7 +307,7 @@ const HTMLForms = () => {
                 </div>
             </section>
             <section className="mb-12">
-                <div className="bg-white py-10 px-4">
+                <div className="py-10 px-4">
                     <div className="max-w-4xl mx-auto" data-aos="fade-up">
                         <Card hoverable className="shadow-lg">
                             <Title level={2} className="text-left">
@@ -377,7 +378,7 @@ const HTMLForms = () => {
                 </div>
             </section>
             <section className="mb-12">
-                <div className="bg-white py-10 px-4">
+                <div className="py-10 px-4">
                     <div className="max-w-4xl mx-auto" data-aos="fade-up">
                         <Card hoverable className="shadow-lg">
                             <Title level={2} className="text-left">
@@ -451,7 +452,7 @@ const HTMLForms = () => {
                 </div>
             </section>
             <section className="mb-12">
-                <div className="bg-white py-10 px-4">
+                <div className="py-10 px-4">
                     <div className="max-w-4xl mx-auto" data-aos="fade-up">
                         <Card hoverable className="shadow-lg">
                             <Title level={2} className="text-left">
@@ -512,7 +513,7 @@ const HTMLForms = () => {
                 </div>
             </section>
             <section className="mb-12">
-                <div className="bg-white py-10 px-4">
+                <div className="py-10 px-4">
                     <div className="max-w-4xl mx-auto" data-aos="fade-up">
                         <Card hoverable className="shadow-lg">
                             <Title level={2} className="text-left">
@@ -566,12 +567,69 @@ const HTMLForms = () => {
                                 <div className="">
                                     <ul className="list-inside list-disc text-lg">
                                         <li>Thẻ textarea được sử dụng để nhập dữ liệu dạng text lớn, chẳng
-                                            hạn như nội dung của một bài báo, mô tả của một sản phẩm…</li>
+                                            hạn như nội dung của một bài báo, mô tả của một sản phẩm…
+                                        </li>
                                         <li>Các thuộc tính quan trọng của thẻ textarea:<br/>
                                             • rows: số lượng dòng (chiều cao)<br/>
                                             • cols: số lượng cột (chiều rộng)
                                         </li>
                                     </ul>
+                                </div>
+                            </div>
+                        </Card>
+                    </div>
+                </div>
+            </section>
+
+            <section className="mb-12">
+                <div className="py-10 px-4">
+                    <div className="max-w-4xl mx-auto" data-aos="fade-up">
+                        <Card hoverable className="shadow-lg">
+                            <Title level={2} className="text-left">
+                                Bảng trong HTML
+                            </Title>
+                            <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8">
+                                <div className="">
+                                    <ul className="list-inside list-disc text-lg">
+                                        <li>Bảng được sử dụng để thể hiện dữ liệu dưới dạng hàng và cột</li>
+                                        <li>Sử dụng bảng khi muốn hiển thị một danh sách các đối tượng với
+                                            nhiều thuộc tính khác nhau</li>
+                                        <li>Cách thành phần của bảng:
+
+                                            <ul className="list-inside list-disc text-lg">
+                                                <li>Cột (column)</li>
+                                                <li>Dòng (row)</li>
+                                                <li>Đường viền (border)</li>
+                                                <li>Tiêu đề (header)</li>
+                                            </ul>
+                                        </li>
+                                        <li>Các thẻ được dùng đẻ tạo bảng: <code>{`<table>`}</code>, <code>{`<tr>`}</code>, <code>{`<td>`}</code>, <code>{`<th>`}</code></li>
+                                    </ul>
+                                    <pre
+                                        className="bg-gray-900 text-white p-4 rounded-md overflow-auto">
+                            <code>
+                                {`<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>`}
+                            </code>
+                            </pre>
+                                </div>
+                                <div className="flex flex-col justify-center items-center">
+                                    <HtmlTable/>
                                 </div>
                             </div>
                         </Card>
