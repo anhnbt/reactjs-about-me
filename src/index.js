@@ -18,6 +18,7 @@ import {Ten} from "./components/lesson-01-basic-ux-ui/Ten";
 import HTMLLesson from "./components/lesson-02-basic-html/HTMLLesson";
 import HTMLForms from "./components/lesson-03-html-forms-and-tables/HTMLForms";
 import CSSLayout from "./components/lesson-07-css-layout/CSSLayout";
+import CSSRWD from "./components/lesson-08-css-rwd/CSSRWD";
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
   {
     path: "/lesson-07-css-layout",
     element: <CSSLayout />,
+  },
+  {
+    path: "/lesson-08-css-rwd",
+    element: <CSSRWD />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
